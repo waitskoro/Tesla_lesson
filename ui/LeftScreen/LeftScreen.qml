@@ -8,5 +8,14 @@ Rectangle{
         bottom: bottomBar.top
         top: parent.top
     }
-    color:"blue"
+
+    color: "white"
+
+    Image{
+        id: car
+        anchors.centerIn: parent
+        width: parent.width * 0.75
+        fillMode: Image.PreserveAspectFit
+        source: "qrc:/ui/assets/car.png"
+    }
 }

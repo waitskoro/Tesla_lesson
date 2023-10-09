@@ -9,4 +9,17 @@ Rectangle{
     }
     color: "black"
     height: parent.height / 12
+
+    Image{
+        id: icon_car
+        anchors{
+            left: parent.left
+            leftMargin: 30
+            verticalCenter: parent.verticalCenter
+        }
+
+        height: parent.height * 0.85
+        fillMode: Image.PreserveAspectFit
+        source: "qrc:/ui/assets/icon-car.png"
+    }
 }

@@ -1,6 +1,6 @@
 import QtQuick 2.0
-import QtLocation 5.12
-import QtPositioning 5.12
+import QtLocation 5.14
+import QtPositioning 5.14
 
 Rectangle{
     id: rightScreen
@@ -24,4 +24,33 @@ Rectangle{
     }
 
     width: parent.width * 2/3
+
+    Image{
+        id: icon_car
+        anchors{
+            left: parent.left
+            top: parent.top
+            margins: 20
+        }
+        width: parent.width / 40
+
+        fillMode: Image.PreserveAspectFit
+        source: "qrc:/ui/assets/lock.png"
+    }
+
+    Text{
+        id: datetimeText
+        anchors{
+            left: icon_car.right
+            leftMargin: 40
+            topMargin: 25
+            bottom: icon_car.bottom
+            top: parent.top
+        }
+        font.pixelSize: 12
+        font.bold: true
+        color: "black"
+        text: "12:34"
+    }
 }
+
